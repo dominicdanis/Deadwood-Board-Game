@@ -1,0 +1,45 @@
+#board{
+    background-image: url(images/board.jpg);
+    background-repeat: no-repeat;
+}
+#statDisplay{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-font-family: Impact,fantasy;
+    -fx-border: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: fantasy;
+    border: none;
+}
+#beginBox{
+    background-color: #F6BE8F;
+}
+#dayLabel{
+    -fx-font-family: Impact, fantasy;
+    -fx-font-size: 20px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+#control{
+    -fx-border: none;
+    -fx-font-size: 15px;
+    -fx-background-color: #B17246;
+    -fx-font-weight: bold;
+    -fx-font-family: Impact, fantasy;
+    border: none;
+    font-size: 15px;
+    background-color: #B17246;
+    font-weight: bold;
+    font-family: Impact, fantasy;
+}
+#window{
+    -fx-background-color: #F6BE8F;
+    background-color: #F6BE8F;
+}
+#gcomm{
+    -fx-font-size: 15px;
+    -fx-font-family: Impact, fantasy;
+    font-size: 15px;
+    font-family: Impact, fantasy;
+}

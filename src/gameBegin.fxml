@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="bigPane" dividerPositions="0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeginController">
+  <items>
+      <ImageView fx:id="gameImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/DeadwoodCover.png" />
+         </image>
+      </ImageView>
+    <AnchorPane fx:id="lowerHalf">
+         <children>
+            <VBox id="beginBox" fx:id="selectBox" alignment="CENTER" minWidth="0.0" prefWidth="1200.0" stylesheets="@boardStyle.css">
+               <children>
+                  <Label id="dayLabel" alignment="CENTER" contentDisplay="CENTER" stylesheets="@boardStyle.css" text="Select your number of players" />
+                  <HBox fx:id="buttonBox" alignment="CENTER" spacing="25.0">
+                     <children>
+                        <Button id="control" fx:id="players2" mnemonicParsing="false" onAction="#startGame" text="2" />
+                        <Button id="control" fx:id="players3" layoutX="321.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="3" />
+                        <Button id="control" fx:id="players4" layoutX="283.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="4" />
+                        <Button id="control" fx:id="players5" layoutX="244.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="5" />
+                        <Button id="control" fx:id="players6" layoutX="205.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="6" />
+                        <Button id="control" fx:id="players6" layoutX="476.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="7" />
+                        <Button id="control" fx:id="players8" layoutX="437.0" layoutY="95.0" mnemonicParsing="false" onAction="#startGame" text="8" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

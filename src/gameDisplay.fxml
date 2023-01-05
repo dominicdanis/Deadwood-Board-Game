@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="window" stylesheets="@boardStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <center>
+      <Pane id="board" fx:id="boardHolder" stylesheets="@boardStyle.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="trainStationArea" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="trainTake3" fitHeight="47.0" fitWidth="47.0" layoutX="141.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="trainTake2" fitHeight="47.0" fitWidth="47.0" layoutX="89.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="trainTake1" fitHeight="47.0" fitWidth="47.0" layoutX="36.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="secretHideoutArea" fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="secretTake1" fitHeight="47.0" fitWidth="47.0" layoutX="151.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="secretTake2" fitHeight="47.0" fitWidth="47.0" layoutX="161.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="secretTake3" fitHeight="47.0" fitWidth="47.0" layoutX="161.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="churchArea" fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="churchTake1" fitHeight="47.0" fitWidth="47.0" layoutX="161.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="churchTake2" fitHeight="47.0" fitWidth="47.0" layoutX="171.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hotelArea" fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hotelTake1" fitHeight="47.0" fitWidth="47.0" layoutX="171.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hotelTake2" fitHeight="47.0" fitWidth="47.0" layoutX="181.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hotelTake3" fitHeight="47.0" fitWidth="47.0" layoutX="181.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mainStreetArea" fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mainTake1" fitHeight="47.0" fitWidth="47.0" layoutX="181.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mainTake2" fitHeight="47.0" fitWidth="47.0" layoutX="191.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="mainTake3" fitHeight="47.0" fitWidth="47.0" layoutX="191.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jailArea" fitHeight="150.0" fitWidth="200.0" layoutX="205.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jailTake1" fitHeight="47.0" fitWidth="47.0" layoutX="191.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="generalStoreArea" fitHeight="150.0" fitWidth="200.0" layoutX="81.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="generalTake1" fitHeight="47.0" fitWidth="47.0" layoutX="201.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="generalTake2" fitHeight="47.0" fitWidth="47.0" layoutX="211.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ranchArea" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ranchTake1" fitHeight="47.0" fitWidth="47.0" layoutX="211.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ranchTake2" fitHeight="47.0" fitWidth="47.0" layoutX="221.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bankArea" fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bankTake1" fitHeight="47.0" fitWidth="47.0" layoutX="221.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="saloonArea" fitHeight="150.0" fitWidth="200.0" layoutX="111.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/CardBack.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="saloonTake1" fitHeight="47.0" fitWidth="47.0" layoutX="231.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="saloonTake2" fitHeight="47.0" fitWidth="47.0" layoutX="241.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@images/shot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="blue" fitHeight="47.0" fitWidth="47.0" layoutX="46.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/b1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cyan" fitHeight="47.0" fitWidth="47.0" layoutX="56.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/c1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="green" fitHeight="47.0" fitWidth="47.0" layoutX="66.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/g1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="orange" fitHeight="47.0" fitWidth="47.0" layoutX="76.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/o1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pink" fitHeight="47.0" fitWidth="47.0" layoutX="86.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/p1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="red" fitHeight="47.0" fitWidth="47.0" layoutX="96.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/r1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="white" fitHeight="47.0" fitWidth="47.0" layoutX="116.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/w1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="violet" fitHeight="47.0" fitWidth="47.0" layoutX="106.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/v1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="scene1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene2" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene3" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene4" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene5" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene6" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene7" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene8" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene9" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene10" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene11" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene12" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene13" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene14" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene15" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene16" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene17" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene18" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene19" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene20" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene21" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene22" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene23" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene24" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene25" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene26" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene27" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene28" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene29" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene30" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene31" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene32" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene33" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene34" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene35" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene36" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene37" fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene38" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene39" fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+            <ImageView fx:id="scene40" fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <VBox prefHeight="453.0" prefWidth="256.0" spacing="7.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="dayLabel" fx:id="currentDayLabel" stylesheets="@boardStyle.css" text="Label">
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding></Label>
+            <GridPane id="statDisplay" prefHeight="67.0" prefWidth="100.0" stylesheets="@boardStyle.css" vgap="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="activePieceTable" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <Label text="Active Player" />
+                  <Label lineSpacing="10.0" text="Rehearsal Points" GridPane.rowIndex="1" />
+                  <Label text="Dollars" GridPane.rowIndex="2" />
+                  <Label text="Credits" GridPane.rowIndex="3" />
+                  <Label fx:id="rehearsePoints" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="moneyInTable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="creditsInTable" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Label id="gcomm" fx:id="gameCommunications" prefHeight="200.0" prefWidth="200.0" stylesheets="@boardStyle.css" wrapText="true" />
+            <Button id="control" fx:id="moveButton" mnemonicParsing="false" onAction="#startMove" stylesheets="@boardStyle.css" text="Move" visible="false" />
+            <ChoiceBox id="control" fx:id="moveChoice" prefWidth="150.0" stylesheets="@boardStyle.css" visible="false" />
+            <Button id="control" fx:id="confirmButton" mnemonicParsing="false" onAction="#submitMove" stylesheets="@boardStyle.css" text="Submit Move" visible="false" />
+            <Button id="control" fx:id="actButton" mnemonicParsing="false" onAction="#startAct" stylesheets="@boardStyle.css" text="Act" visible="false" />
+            <Button id="control" fx:id="rehearseButton" mnemonicParsing="false" onAction="#rehearse" stylesheets="@boardStyle.css" text="Rehearse" visible="false" />
+            <Button id="control" fx:id="takeRoleButton" mnemonicParsing="false" onAction="#startTakeRole" stylesheets="@boardStyle.css" text="Take a Role" visible="false" />
+            <ChoiceBox id="control" fx:id="roleChoice" prefWidth="150.0" stylesheets="@boardStyle.css" visible="false" />
+            <Button id="control" fx:id="confirmRole" mnemonicParsing="false" onAction="#confirmRole" stylesheets="@boardStyle.css" text="Confirm Choice" visible="false" />
+            <Button id="control" fx:id="upgradeButton" mnemonicParsing="false" onAction="#upgradeClick" stylesheets="@boardStyle.css" text="Upgrade" visible="false" />
+            <ChoiceBox id="control" fx:id="upgradeChoices" prefWidth="150.0" stylesheets="@boardStyle.css" visible="false" />
+            <Button id="control" fx:id="creditBuy" mnemonicParsing="false" onAction="#buyWithCredit" stylesheets="@boardStyle.css" text="Upgrade with Credits" visible="false" />
+            <Button id="control" fx:id="dollarBuy" mnemonicParsing="false" onAction="#buyWithDollar" stylesheets="@boardStyle.css" text="Upgrade with Dollars" visible="false" />
+            <Button id="control" fx:id="cancelPurchase" mnemonicParsing="false" stylesheets="@boardStyle.css" text="Cancel Purchase" visible="false" />
+            <Button id="control" fx:id="endTurnButton" mnemonicParsing="false" onAction="#endTurn" stylesheets="@boardStyle.css" text="End Turn" visible="false" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
